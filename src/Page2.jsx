@@ -15,6 +15,29 @@ export default function Page2() {
     setdark(!dark);
   }
 
+  //store all news 
+  const [data,setdata]=React.useState(null)
+
+  //fetching news from api
+  React.useEffect(() => {
+    async function getData() {
+      const url =
+        "https://newsapi.org/v2/top-headlines?q=tesla&from=2024-06-19&sortBy=publishedAt&apiKey=447851325f954941a22152038138ccd4";
+      try {
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`Response status: ${response.status}`);
+        }
+        const json = await response.json();
+        console.log(json)
+        
+      } catch (error) {
+        console.error(error.message);
+      }
+    }
+    getData();
+  }, []);
+
 
   return (
     <>
