@@ -1,3 +1,133 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body{
+  background-color:white;
+}
+.p2{
+  margin: 0;
+}
+.left_p1{
+  background-color:#ededea;
+  font-family: 'Karla',sans-serif;
+  height:100vh;
+  gap:1rem;
+  
+}
+.login:hover,.signup:hover{
+  background-color: lightgray;
+  color:black;
+}
+.login, .signup{
+  color:#ededea;
+  width:50%;
+}
+.login_img{
+  height:100vh;
+  width:35rem;
+}
+.p1_content{
+  margin: 0;
+  height:80%;
+  /* padding:2rem; */
+  margin:1rem 8rem;
+}
+.left_p1_header{
+  height:10%;
+  padding:2rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  }
+.left_p1_body{
+  padding:1rem;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+/* page2 css begins */
+.left_p2{
+  width:5%;
+  height:100vh;
+  padding:0.8rem 0.5rem;
+  border-radius: 1rem;
+
+}
+.right_p2{
+  width:95%;
+  height:100vh;
+  
+  /* padding:1rem 1rem; */
+}
+.right_p2_navbar{
+  height:10vh;
+  padding:1rem 1rem;
+  border-radius: 1rem;
+  display:flex;
+  align-items: center;
+}
+.right_p2_body{
+  height:90vh;
+  padding:1rem 1rem;
+  border-radius: 1rem;
+}
+.search{
+  width:1rem;
+  height:1rem;
+}
+.search_bar{
+  display:flex;
+  flex-direction: row;
+  gap:0.2rem;
+  width:70%;
+  padding-right:0;
+  margin-right:0;
+}
+.right_navbar{
+  display:flex;
+  gap:0.8rem;
+  margin-right:2rem;
+  width:30%;
+  justify-content: right;
+}
+.italic{
+  width:80%;
+  padding:0rem 1rem;
+  border:2px solid black;
+  border-radius: 0.5rem;
+}
+.default{
+  width:80vw;
+  height:83.5vh;
+  border-radius:1rem;
+}
+
+/*Sidebar css*/
+.sidebar{
+  height:100vh;
+  width:18%;
+  padding:0.8rem 1rem;
+  border-radius: 0.5rem;
+  
+  /* transition: 0.1s; */
+}
+.sidebar_icons{
+  width:1.5rem;
+  height:1.5rem;
+  cursor:pointer;
+}
+.sidebar-list{
+  line-height: 2.2rem;
+  /* justify-content: center; */
+  align-items: center;
+}
+.ul{
+  margin-top:1rem;
+}
+/*dark mode css*/
+.dark{
+  background-color: black;
+  color:white;
+  /* filter:invert(1); */
+}
