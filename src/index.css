@@ -127,7 +127,13 @@ body{
 }
 /*dark mode css*/
 .dark{
-  background-color: black;
+  background-color: rgb(36, 35, 35);
   color:white;
   /* filter:invert(1); */
+}
+.flip{
+  filter: invert(1);
+}
+.search_flip{
+  color:black
 }
